@@ -1,4 +1,4 @@
-# Very Good Workflows
+# Very Good Workflows forked to meet mementum.studio requirements.
 
 [![Very Good Ventures][logo_white]][very_good_ventures_link_dark]
 [![Very Good Ventures][logo_black]][very_good_ventures_link_light]
@@ -18,13 +18,11 @@ To get started add very good workflows to an existing GitHub workflow:
 
 ```yaml
 # A reusable workflow for Dart packages
-uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/dart_package.yml@v1
+uses: mementum-studio/mementum_flutter_workflows/.github/workflows/dart_package.yml@v1
 
 # A reusable workflow for Flutter packages
-uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
+uses: mementum-studio/mementum_flutter_workflows/.github/workflows/flutter_package.yml@v1
 ```
-
-For a more detailed guide, including tips and tricks, check out [our blog][very_good_workflows_blog_link].
 
 ## Dart Package Workflow
 
@@ -121,7 +119,7 @@ on: pull_request
 
 jobs:
   build:
-    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
+    uses: mementum-studio/mementum_flutter_workflows/.github/workflows/flutter_package.yml@v1
     with:
       coverage_excludes: "*.g.dart"
       flutter_channel: "stable"
@@ -129,8 +127,8 @@ jobs:
       working_directory: "examples/my_flutter_package"
 ```
 
-[ci_badge]: https://github.com/VeryGoodOpenSource/very_good_workflows/actions/workflows/ci.yml/badge.svg
-[ci_link]: https://github.com/VeryGoodOpenSource/very_good_workflows/actions
+[ci_badge]: https://github.com/mementum-studio/mementum_flutter_workflows/actions/workflows/ci.yml/badge.svg
+[ci_link]: https://github.com/mementum-studio/mementum_flutter_workflows/actions
 [github_workflows_link]: https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions
 [license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license_link]: https://opensource.org/licenses/MIT

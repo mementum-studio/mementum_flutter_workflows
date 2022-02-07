@@ -48,12 +48,10 @@ jobs:
 
       - name: 🏃🏼‍♂️ Buildrunner build
         run: |
-          cd ${{inputs.working_directory}}
           flutter pub run build_runner build --delete-conflicting-outputs
 
       - name: 🏞 Generate assets with fluttergen
         run: |
-          cd ${{inputs.working_directory}}
           fluttergen
 
       - name: ✨ Check Formatting

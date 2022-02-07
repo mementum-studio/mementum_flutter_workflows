@@ -68,3 +68,4 @@ jobs:
         with:
           path: ${{inputs.working_directory}}/coverage/lcov.info
           exclude: ${{inputs.coverage_excludes}}
+          min_coverage: 0
